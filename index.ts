@@ -17,7 +17,7 @@ class BootLevel extends Phaser.Scene {
     this.load.bitmapFont({
       key: 'Oswald',
       textureURL: 'static/assets/font/FadeYellowRedCursive.png',
-      fontDataURL: 'static/assets/font/FadeYellowRedC.xml',
+      fontDataURL: 'static/assets/font/FadeYellowRedCursive.xml',
     });
     this.load.image('logo', 'static/assets/ladybug.png');
     this.load.image('splashscreen', 'static/assets/splashscreen.png');
