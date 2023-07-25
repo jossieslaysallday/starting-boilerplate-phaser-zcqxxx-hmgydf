@@ -16,8 +16,8 @@ class BootLevel extends Phaser.Scene {
       'https://jossieslaysallday.github.io/starting-boilerplate-phaser-zcqxxx-hmgydf/';
     this.load.bitmapFont({
       key: 'Oswald',
-      textureURL: 'static/assets/font/OswaldLightRed.png',
-      fontDataURL: 'static/assets/font/OswaldLightRed.xml',
+      textureURL: 'static/assets/font/FadeYellowRedCursive.png',
+      fontDataURL: 'static/assets/font/FadeYellowRedC.xml',
     });
     this.load.image('logo', 'static/assets/ladybug.png');
     this.load.image('splashscreen', 'static/assets/splashscreen.png');
@@ -41,7 +41,7 @@ class SplashLevel extends Phaser.Scene {
     logo.setScale(0.3);
     this.logo = logo;
 
-    const text1 = this.add.bitmapText(-300, 200, 'Oswald', '   power', 32);
+    const text1 = this.add.bitmapText(-300, 200, 'Oswald', 'power', 32);
     this.companyLine1 = text1;
     const text2 = this.add.bitmapText(-300, 230, 'Oswald', 'wierdness', 32);
     this.companyLine2 = text2;
