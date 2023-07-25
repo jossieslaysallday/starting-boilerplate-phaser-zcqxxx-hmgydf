@@ -41,7 +41,7 @@ class SplashLevel extends Phaser.Scene {
     logo.setScale(0.3);
     this.logo = logo;
 
-    const text1 = this.add.bitmapText(-300, 200, 'Oswald', 'power', 32);
+    const text1 = this.add.bitmapText(-300, 200, 'Oswald', '   power', 32);
     this.companyLine1 = text1;
     const text2 = this.add.bitmapText(-300, 230, 'Oswald', 'wierdness', 32);
     this.companyLine2 = text2;
