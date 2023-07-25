@@ -16,8 +16,8 @@ class BootLevel extends Phaser.Scene {
       'https://jossieslaysallday.github.io/starting-boilerplate-phaser-zcqxxx-hmgydf/';
     this.load.bitmapFont({
       key: 'Oswald',
-      textureURL: 'static/assets/font/FadeYellowRedCursive.png',
-      fontDataURL: 'static/assets/font/FadeYellowRedCursive.xml',
+      textureURL: 'static/assets/font/Fadeeeeee.png',
+      fontDataURL: 'static/assets/font/Fadeeeeee.xml',
     });
     this.load.image('logo', 'static/assets/ladybug.png');
     this.load.image('splashscreen', 'static/assets/splashscreen.png');
@@ -37,8 +37,8 @@ class SplashLevel extends Phaser.Scene {
   preload() {
     const splashScreen = this.add.image(200, 200, 'splashscreen');
 
-    const logo = this.add.image(200, 100, 'logo');
-    logo.setScale(0.3);
+    const logo = this.add.image(600, 100, 'logo');
+    logo.setScale(1);
     this.logo = logo;
 
     const text1 = this.add.bitmapText(-300, 200, 'Oswald', '   power', 32);
@@ -64,10 +64,9 @@ class SplashLevel extends Phaser.Scene {
   create() {
     this.tweens.add({
       targets: this.logo, //your image that must spin
-      rotation: 2 * Math.PI, //rotation value must be radian
-      ease: 'Bounce',
+      x: '220',
       delay: 600,
-      duration: 600, //duration is in milliseconds
+      duration: 1000, //duration is in milliseconds
     });
 
     this.tweens.add({
